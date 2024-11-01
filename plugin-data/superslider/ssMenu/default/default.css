@@ -1,0 +1,157 @@
+/* @groupmulti Accordion */
+
+.ss_menu h2 { 
+	text-align: left; 
+	border-bottom: 2px solid #527ECF;
+	padding: 6px;
+	margin: 0px;
+	}
+.ss_menu{
+    position: relative;
+}
+.ss_menu:after {
+	border-color: #527ECF #CECECE #CECECE;
+    border-style: solid;
+    border-width: 2px 1px 1px;
+    bottom: -26px;
+    content: "";
+    height: 25px;
+    left: 0;
+    position: absolute;
+    width: 99%;
+	-moz-border-radius: 0 0px 6px 6px;
+	-webkit-border-radius: 0 0px 6px 6px;
+	border-radius: 0 0px 6px 6px;
+}
+.ss_menu h2, .ss_menu:after{
+background: rgb(142,195,238);
+background: -moz-linear-gradient(top,  rgba(142,195,238,1) 1%, rgba(79,139,188,1) 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,rgba(142,195,238,1)), color-stop(100%,rgba(79,139,188,1)));
+background: -webkit-linear-gradient(top,  rgba(142,195,238,1) 1%,rgba(79,139,188,1) 100%);
+background: -o-linear-gradient(top,  rgba(142,195,238,1) 1%,rgba(79,139,188,1) 100%);
+background: -ms-linear-gradient(top,  rgba(142,195,238,1) 1%,rgba(79,139,188,1) 100%);
+background: linear-gradient(to bottom,  rgba(142,195,238,1) 1%,rgba(79,139,188,1) 100%);
+}
+.ssMenuList{
+	margin: 0px;
+	padding-right: 0px;
+	border: 1px solid #d1e1f6;
+	border-right: 1px solid #527ECF;
+	text-transform: capitalize;
+	
+}
+.myNavArrow{
+	background-image: url('nav_arrow.png');
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	right: 0px;
+	width: 10px;
+}
+.ssmToggleBar{ padding: 4px;}
+.postCount{ color: #5fc3f4;}
+
+.ssMenuList .ssMore{
+    
+}
+.ssMenuList .ssMore {
+	background-image: url('nav_arrows.png');
+	background-repeat: no-repeat;
+	background-position: right 3px;
+    padding-right:24px !important;
+    font-style:italic;    
+    text-align:right;
+}
+.ssMenuList .ssMore:hover {
+    background-position: right -27px;
+}
+	
+.ssMenuList a{
+    }
+ 
+.ssMenuPost { 
+	display: block; 
+	padding: 6px 2px 4px 20px;
+	border-bottom:1px solid #D6D9EB;
+	}
+/* 
+.showme_1, .showme_2, .showme_3, .showme_4 {opacity: 0;}
+*/
+.showme_2 .ssMenuPost { padding: 6px 2px 4px 24px;}
+.showme_2 .ssmToggleBar { margin-left: 4px; border-left: 1px solid #d1e1f6;}
+
+
+.showme_3 .ssMenuPost { padding: 6px 2px 4px 24px;}
+.showme_3, .showme_4 { margin-left: 4px; border-left: 1px solid #d1e1f6;}
+
+.ssMenuList .catLink { padding: 0px 0px; }
+
+.ssMenuList .linkList { 
+    border-left:1px solid #d1e1f6;
+    margin:0 0 0 4px;
+    padding: 0px;
+    }
+
+.menuRss { margin-left: 4px; font-size: 8px; padding-right: 0px;}
+
+/* This is the open close arrows */
+.subsym {
+	background-image: url('nav_arrows.png');
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	padding: 5px 10px ;
+	cursor: pointer;
+	}
+	
+.subsym:link {background-position: 0 0;}
+.subsym:visited {background-position: 0 0;}
+.subsym:hover {background-position: 0 -30px;}
+
+.ssMenuList .open {	
+	background-image: url('nav_arrows.png');
+	background-repeat: no-repeat;
+	background-position: 0 -60px;
+	padding: 5px 10px ;}
+	
+.ssMenuList .open:link {background-position: 0 -60px;}
+.ssMenuList .open:visited {background-position: 0 -60px;}
+.ssMenuList .open:hover {background-position: 0 -90px;}
+
+/* This is the toggler bar animation destinations */
+.tabopen { 
+    border-bottom: 1px solid #d1e1f6;
+    border-top: 4px solid #d1e1f6;
+    padding: 6px 0px;
+    }
+.tabclosed { 
+    border-bottom: 0px solid #d1e1f6;
+    border-top: 1px solid #d1e1f6;
+    padding: 6px 0px;
+    }
+    
+.linkslist {
+    
+    }
+
+.linkslist .ssmToggleBar {
+    padding-left: 30px;
+    background-position: 10px -60px;
+    }
+
+/* This is the active page*/
+div.active_nav {
+	font-weight: bold;
+	border-left: 5px solid #d1e1f6;
+	border-top: 5px solid #d1e1f6; 
+    }
+
+span.active_nav
+{
+	font-weight: bold;
+	border-left: 5px solid #d1e1f6;
+	padding-left: 15px;
+	font-variant: small-caps;
+}
+/* This is the more from cat link when active */
+span.ssMore.active_nav {
+    display:none;
+}
